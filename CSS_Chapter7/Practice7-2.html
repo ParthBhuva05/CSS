@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7 Using Css Grid Layout Practice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            color: aqua;
+            height: 80px;
+        }
+
+        ul {
+            padding: 30px;
+        }
+
+        li {
+            list-style: none;
+            display: inline;
+            padding: 25px;
+        }
+        .logo{
+            padding: 15px;
+        }
+
+        .logo img {
+            width: 90px;
+        }
+
+        .iteams {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: right
+        }
+
+        .bgimage {
+            background-image: url(2.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 50vh;
+        }
+
+        .container {
+            padding: 30px 0;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-around;
+        }
+
+        .first img {
+            width: 30vw;
+            height: 50vh;
+        }
+
+        .second img {
+            width: 30vw;
+            height: 50vh;
+        }
+
+        .third img {
+            width: 30vw;
+            height: 50vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="iteams">
+            <div class="logo">
+                <img src="Instagram-Logo.png" alt="">
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                        <li>Skill</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="bgimage">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita repudiandae praesentium laudantium deserunt
+        reprehenderit doloremque placeat officia repellat facilis odio sunt architecto eius sequi maxime inventore
+        consequuntur, provident laborum nihil. Voluptate commodi nulla ab aspernatur perferendis pariatur assumenda
+        modi. Impedit sunt animi amet eos fugit.
+    </div>
+    <div class="container">
+        <div class="first">
+            <img src="A.webp" alt="">
+        </div>
+        <div class="second">
+            <img src="B.jpg" alt="">
+        </div>
+        <div class="third">
+            <img src="C.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter6 Layout Practice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            height: 80px;
+            color: white;
+        }
+
+        .bgimage {
+            background-image: url(2.jpeg);
+            width: 100vw;
+            height: 50vh;
+            background-size: 100vw;
+            background-repeat: no-repeat;
+            color: red;
+        }
+
+        .first img {
+            width: 30vw;
+            height: 40vh;
+        }
+
+        .second img {
+            width: 30vw;
+            height: 40vh;
+        }
+
+        .third img {
+            width: 30vw;
+            height: 40vh;
+        }
+
+        .container {
+            padding: 30px 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        li {
+            list-style: none;
+            display: inline;
+            padding: 30px;
+        }
+
+        ul {
+            padding: 30px;
+        }
+
+        .logo img {
+            width: 60px;
+            height: 60px;
+            padding: 10px;
+        }
+
+        .logo {
+            display: inline-block;
+        }
+
+        .menu {
+            float: right;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="3.png" alt="GOOGLE LOGO">
+        </div>
+
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="bgimage">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ad porro debitis voluptate sequi ab quas
+        quasi repellat expedita exercitationem, asperiores non, pariatur dolore explicabo, magnam excepturi repellendus
+        nobis? Inventore maiores quisquam illum tempora, dolorum alias, nostrum facere aliquam necessitatibus totam,
+        laboriosam consequatur debitis blanditiis veniam modi fugit accusamus distinctio labore corporis culpa
+        voluptatibus cumque?
+    </div>
+
+    <div class="container">
+        <div class="first">
+            <img src="A.webp" alt="">
+        </div>
+        <div class="second">
+            <img src="B.jpg" alt="">
+        </div>
+        <div class="third">
+            <img src="C.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

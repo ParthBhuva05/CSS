@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* height: 4444px; */
+        }
+        ul{
+            background-color: red;
+        }
+
+        li {
+            /* display: inline; */
+            list-style: square ;
+            list-style-position: inside;
+            /* list-style-image:url(download.jpeg) ; */
+            
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            height: 70px;
+            /* position: sticky; */
+            /* top: 0; */
+            z-index: 2;
+        }
+
+        p {
+            text-align: center;
+            border: 2px solid red
+        }
+
+        .container {
+            background-color: aqua;
+            width: 50vw;
+            height: 50vh;
+            margin: auto;
+            padding: 0 34px;
+            /* position: relative; */
+        }
+
+        .box {
+            background-color: yellowgreen;
+            height: 200px;
+            width: 200px;
+            /* position: relative; */
+            /* position: absolute; */
+            /* position: fixed; */
+            /* top: 0; */
+            /* left: 0; */
+            /* bottom: 0; */
+            /* right: 0; */
+        }
+
+        .box2 {
+            background-color: rgb(89, 50, 205);
+            height: 200px;
+            width: 200px;
+            /* position: relative; */
+            /* top: 50px; */
+            /* left: 50px; */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis ipsum illum repudiandae accusamus iste,
+            nam, aspernatur praesentium fugiat, maiores nulla excepturi doloremque pariatur! Ipsam accusamus quos
+            obcaecati voluptatum nisi deleniti alias eum temporibus? Dicta.</p>
+        <div class="box">
+            I am a box
+        </div>
+        <div class="box2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, quibusdam harum. Natus asperiores
+            dolorum omnis rem ipsa impedit? Saepe, placeat beatae adipisci dolor debitis aliquam consequuntur hic eum,
+            laboriosam, dolorem laudantium modi. Quia, minima.
+        </div>
+    </div>
+
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+        <li>Graps</li>
+    </ul>
+</body>
+
+</html>
